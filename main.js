@@ -81,3 +81,23 @@ console.log("-=: ", p - t); // p = p - t => -9
 console.log("*=: ", (r *= g)); // r = r * g => 15
 console.log("/=: ", (r /= g)); // r = r / g => 3
 console.log("%=: ", (g %= r)); // g = g % r => 2
+
+// Comparison Operators: ==, ===, !=, !==, >, <, >=, <=
+// Comparison operators are used to compare two values and return a boolean result (true or false)
+
+// !: not operator
+// !=: not equal to, flips the result of the comparison
+// ==: equals in value but not in data type
+// ===: equal value and data type
+
+var num1 = 10; // number type
+var num2 = "10"; // string type
+console.log("Equal to: ", num1 == num2); // true, value is equal
+console.log("Strict Equal to: ", num1 === num2); // false, value and type are not equal
+console.log("Not Equal to: ", num1 != num2); // false, value is equal
+console.log("Strict Not Equal to: ", num1 !== num2); // true, data type are not equal
+console.log("Greater than: ", num1 > num2); // false
+console.log("Less than: ", num1 < num2); // false
+console.log("Greater than or equal to: ", num1 >= num2); // true
+console.log("Less than or equal to: ", num1 <= num2); // true
+
