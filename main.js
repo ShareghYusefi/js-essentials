@@ -92,6 +92,7 @@ console.log("%=: ", (g %= r)); // g = g % r => 2
 
 var num1 = 10; // number type
 var num2 = "10"; // string type
+var num3 = 20;
 console.log("Equal to: ", num1 == num2); // true, value is equal
 console.log("Strict Equal to: ", num1 === num2); // false, value and type are not equal
 console.log("Not Equal to: ", num1 != num2); // false, value is equal
@@ -101,3 +102,15 @@ console.log("Less than: ", num1 < num2); // false
 console.log("Greater than or equal to: ", num1 >= num2); // true
 console.log("Less than or equal to: ", num1 <= num2); // true
 
+// Logical Operators: &&, ||, !
+// &&: AND operator
+// ||: OR operator
+// !: Negation operator
+
+console.log("&&: ", num1 == num2 && num1 === num2); // false, one of the conditions return false
+
+// When using || operator, if first condition is true, the second condition is not checked
+console.log("||: ", num3 > num1 || num3 < num2);
+
+// Left hand comparison is true, right hand is false, but flipped to true.
+console.log("&&: ", num1 == num2 && !(num1 === num2)); // true
