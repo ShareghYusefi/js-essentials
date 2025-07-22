@@ -214,3 +214,26 @@ var matrix = [
 console.log("Matrix: ", matrix);
 // Accessing elements in 2D arrays
 console.log("Element: ", matrix[0][2]); // 3
+
+// Functions: blocks of code that perfrom a specific task
+// Syntac: function functionName(parameters) { code to be executed };
+// Parameters: A placeholder inside a function definition. It acts as a variable name for the value tha is passed to the function when it is called.
+// return keyword can be used to return a value from the function
+
+// Defining a function requires the function keyword and parameters
+function sum(a, b) {
+  var result = a + b;
+  return result; // will be spit out of the function usage
+}
+
+// We can store the returned value from a function in a variable
+// How can we use a function? Call it by name and invoke it with parenthesis with Argumments
+// Arguments: The actual value or variable that contains a value being passed into the function. The value replaces the parameter usage within the function.
+var total1 = sum(x, 20);
+console.log("Total : ", total1);
+
+var total2 = sum(27, 67);
+console.log("Total 2: ", total2);
+
+var finalValue = sum(total1, total2);
+console.log("Final Value: ", finalValue);
