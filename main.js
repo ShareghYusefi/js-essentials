@@ -238,4 +238,79 @@ console.log("Total 2: ", total2);
 var finalValue = sum(total1, total2);
 console.log("Final Value: ", finalValue);
 
-// Loops & Control Statements
+// Conditional Statements: used to perform different actions based on different conditions
+// Syntax: if (condition) { code to be executed if condition is true } else { code to be executed if condition is false }
+// 1. if, else if, else
+var age = 17;
+if (age >= 21) {
+  console.log("You cannot vote in the US");
+} else if (age >= 18) {
+  console.log("You can drive in the US");
+} else {
+  console.log("You are too young to vote or drive in the US");
+}
+
+// 2. switch Statement: looks for an exact match of value
+// Syntax: switch (expression) { case value1: code to be executed if expression === value1; break; default: code to be executed if no cases match; }
+var day = "Tuesday";
+
+switch (day) {
+  case "Monday":
+    console.log("Start of the work week");
+    break; // existing the switch code block
+  case "Friday":
+    console.log("End of the work week");
+    break;
+  // Fall through case: if no break is used, the next case will run
+  // If Saturday matches Sunday will run anyways since break is missing
+  case "Saturday":
+  case "Sunday":
+    console.log("Weekend!");
+    break;
+  default:
+    console.log("Midweek day");
+}
+
+// Loops: used to repeat a block of code multiple times
+
+// 1. for Loop: used to repeat a block of code a specific number of times
+// Syntax: for (initialization; condition; increment/decrement) { code to be executed }
+for (var i = 0; i < 3; i++) {
+  console.log("i is: ", i);
+}
+
+// 2. while Loop: used to repeat a block of code as long as a condition is true
+// Syntax: while (condition) { code to be executed }
+var j = 0;
+while (j < 3) {
+  console.log("j is: ", j);
+  j++; // incrementing j to avoid infinite loop
+}
+
+// 3. do while Loop: similar to while loop, but the code block is executed at least once before checking the condition
+// Syntax: do { code to be executed } while (condition);
+var k = 0;
+do {
+  console.log("k is: ", k);
+  k++; // incrementing k to avoid infinite loop
+} while (k < 3);
+
+// 4. for...in Loop: used to iterate over the properties of an object
+// Syntax: for (variable in object) { code to be executed }
+var person = {
+  firstname: "Jane",
+  lastname: "Doe",
+  age: 30,
+  isAdult: true,
+};
+
+for (var key in person) {
+  console.log(`${key}: ${person[key]}`); // key is the property name, person[key] is the value
+}
+
+// 5. for...of Loop: used to iterate over iterable objects like arrays, strings, etc.
+// Syntax: for (variable of iterable) { code to be executed }
+var languages = ["Javascript", "Python", "Java"];
+for (var language of languages) {
+  console.log("Language: ", language); // language is the value of each element in the array
+}
