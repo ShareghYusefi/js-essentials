@@ -237,3 +237,5 @@ console.log("Total 2: ", total2);
 
 var finalValue = sum(total1, total2);
 console.log("Final Value: ", finalValue);
+
+// Loops & Control Statements
